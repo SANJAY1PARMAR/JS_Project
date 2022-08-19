@@ -1,0 +1,15 @@
+body {
+    font-family: cursive;
+    background-image: url("./BG.jpg");
+    margin-top: 32px;
+}
+
+h3 span {
+    font-size: 50px;
+}
+
+h3 input.search-input {
+    width: 300px;
+    margin-left: auto;
+    float: right
+}

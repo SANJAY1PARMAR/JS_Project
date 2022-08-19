@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="PngItem_7208829.png">
+    <title>Java Script Project</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3>
+            <span>Movie Mania</span>
+            <input type="search" placeholder="Search..." class="form-control search-input"
+                data-table="customers-list" />
+        </h3>
+        <span>Movie for All</span>
+        <table class="table table-striped mt32 customers-list" id="data_table">
+            <thead>
+                <tr>
+                    <th>Sr.No.</th>
+                    <th>Movie Name</th>
+                    <th>Theater Name</th>
+                    <th>State</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="row1">
+                    <td id="no_row1">1</td>
+                    <td id="movie_row1">KGF Chapter - 1</td>
+                    <td id="theater_row1">Rajhansh</td>
+                    <td id="state_row1">Gujarat</td>
+                    <td>
+                        <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                        <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+                    </td>
+                </tr>
+                <tr id="row2">
+                    <td id="no_row2">2</td>
+                    <td id="movie_row2">KGF Chapter - 2</td>
+                    <td id="theater_row2">Rajhansh</td>
+                    <td id="state_row2">Gujarat</td>
+                    <td>
+                        <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+                        <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+                    </td>
+                </tr>
+                <tr id="row3">
+                    <td id="no_row3">3</td>
+                    <td id="movie_row3">KGF Chapter - 2</td>
+                    <td id="theater_row3">Rajhansh</td>
+                    <td id="state_row3">Gujarat</td>
+                    <td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="new_no"></td>
+                    <td><input type="text" id="new_movie"></td>
+                    <td><input type="text" id="new_theater"></td>
+                    <td><input type="text" id="new_state"></td>
+                    <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
